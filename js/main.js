@@ -1,5 +1,6 @@
 console.log("js ok");
 
+// ESERCIZIO DELLE EMAIL
 // dichiarazione delle variabili
 let userEmail;
 let accesso;
@@ -35,5 +36,29 @@ myButtonPassword.addEventListener("click", function () {
     document.getElementById("email-output").classList.add("border-red");
     document.getElementById("email-output").innerHTML =
       "accesso non autorizzato";
+  }
+});
+
+// ESERCISIO DEI DADI:
+
+let numUser;
+let numComp;
+const tiraDadi = document.getElementById("dice-button");
+
+tiraDadi.addEventListener("click", function () {
+  numUser = Math.floor(Math.random() * 6) + 1;
+  numComp = Math.floor(Math.random() * 6) + 1;
+
+  document.getElementById("valore-dado-user").innerHTML = numUser;
+  document.getElementById("valore-dado-computer").innerHTML = numComp;
+
+  if (numUser > numComp) {
+    document.getElementById("verdetto").innerHTML = "HAI VINTO!";
+    // document.getElementById("verdetto").classList.add("border-green");
+  } else if (numUser < numComp) {
+    document.getElementById("verdetto").innerHTML = "HAI PERSO :(";
+    // document.getElementById("verdetto").classList.add("border-red");
+  } else {
+    document.getElementById("verdetto").innerHTML = "Pari! ritenta!";
   }
 });
