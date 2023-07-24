@@ -2,7 +2,7 @@ console.log("js ok");
 
 // dichiarazione delle variabili
 let userEmail;
-let accesso = "ko";
+let accesso;
 const myButtonPassword = document.getElementById("email-button");
 
 // ecco la lista di email:
@@ -16,6 +16,7 @@ const email = [
 
 // al momento gestisco solo km e eta
 myButtonPassword.addEventListener("click", function () {
+  accesso = "ko";
   userEmail = document.getElementById("user-email").value;
   console.log(userEmail);
 
@@ -28,8 +29,10 @@ myButtonPassword.addEventListener("click", function () {
 
   //verifica di accesso
   if (accesso == "ok") {
+    document.getElementById("email-output").classList.add("border-green");
     document.getElementById("email-output").innerHTML = userEmail;
   } else {
+    document.getElementById("email-output").classList.add("border-red");
     document.getElementById("email-output").innerHTML =
       "accesso non autorizzato";
   }
