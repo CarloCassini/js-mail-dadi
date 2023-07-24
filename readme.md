@@ -19,12 +19,14 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 - valorizzo la variabile "accesso" con "ko"
 
-- confronto la mail fornita dall'utente con ognuna di quelle della lista fino a che la variabile "accesso" è "ko" oppure non sono stati verificati tutti gli elementi
+- al click del bottone confronto la mail fornita dall'utente con ognuna di quelle della lista fino a che la variabile "accesso" è "ko" oppure non sono stati verificati tutti gli elementi
 
 - **se** la mail è presente nella lista valorizzo una variabile "accesso" con il valore "ok"
 
 - **se** "accesso" == "ko" scrivo il messaggio "benvenuto"
 - **altrimenti** scrivo il messaggio "utente non autorizzato"
+
+**fatto**
 
 ## Svolgimento dadi
 
